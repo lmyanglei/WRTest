@@ -7,7 +7,7 @@ public class CharacterParser {
 	
 	public static void main(String[] args) {
 		CharacterParser characterParser = new CharacterParser();
-		System.out.println(characterParser.getSelling("北京"));
+		System.out.println(characterParser.getSelling("汉字转换为拼音"));
 	}
 	
 	private static int[] pyvalue = new int[] {-20319, -20317, -20304, -20295, -20292, -20283, -20265, -20257, -20242, -20230, -20051, -20036, -20032,
