@@ -16,7 +16,13 @@ public class Log {
 	
 	public static void main(String[] args) {
 		Log log = new Log();
+		
+		// test
 		log.log("it's log");
+		
+		// test
+		Exception e = new Exception();
+		log.log(e);
 	}
 
 	/**
