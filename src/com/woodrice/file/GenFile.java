@@ -9,6 +9,7 @@ import java.io.OutputStreamWriter;
 public class GenFile {
 
 	public static void main(String[] args) {
+		// test
 		GenFile gen = new GenFile();
 		gen.write("log", "content");
 	}
