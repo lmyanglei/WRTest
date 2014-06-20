@@ -3,15 +3,11 @@ package com.woodrice.util;
 import java.util.Random;
 
 public class RandomUtil {
-
-	public static void main(String[] args) {
-
-	}
 	
 	/**
 	 * 返回一个随机数
 	 * 
-	 * @param i
+	 * @param i 数字的位数
 	 * @return
 	 */
 	public static String getRandom(int i) {
@@ -25,4 +21,8 @@ public class RandomUtil {
 		return jj;
 	}
 	
+	// test
+	public static void main(String[] args) {
+		System.out.println(RandomUtil.getRandom(6));
+	}
 }

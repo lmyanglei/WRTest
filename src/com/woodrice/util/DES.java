@@ -99,6 +99,7 @@ public class DES {
 		return b;
 	}
 
+	// test
 	public static void main(String[] args) throws Exception {
 		long start = System.currentTimeMillis();
 		String info = "12345678901234567890";
