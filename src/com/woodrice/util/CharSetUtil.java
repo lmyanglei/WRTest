@@ -2,21 +2,7 @@ package com.woodrice.util;
 
 import java.io.UnsupportedEncodingException;
 
-public class CharSetUtils {
-
-	public static void main(String[] args) {
-		// test
-		String str = "字符";
-		try {
-			System.out.println(str);
-			
-			str = CharSetUtils.changeCharSet(str, "UTF-8", "GB2312");
-			System.out.println(str);
-			
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-	}
+public class CharSetUtil {
 
 	/**
 	 * change the str char set
@@ -30,4 +16,17 @@ public class CharSetUtils {
 		return str = new String(str.toString().getBytes(srcCharSet),dstCharSet);
 	}
 	
+	public static void main(String[] args) {
+		// test
+		String str = "字符";
+		try {
+			System.out.println(str);
+			
+			str = CharSetUtil.changeCharSet(str, "UTF-8", "GB2312");
+			System.out.println(str);
+			
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+	}
 }

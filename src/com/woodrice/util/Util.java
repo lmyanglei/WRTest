@@ -4,14 +4,8 @@ import java.util.Map;
 import java.util.Properties;
 
 public class Util {
-	
-	public static void main(String[] args) {
-		// test
-		Util util = new Util();
-		util.systemInfo();
-	}
 
-	public void systemInfo(){
+	public static void systemInfo(){
 		try{
 			Properties properties = System.getProperties();  
 			 System.out.println(properties.get("user.name"));  
@@ -23,5 +17,10 @@ public class Util {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+	}
+	
+	public static void main(String[] args) {
+		// test
+		Util.systemInfo();
 	}
 }
